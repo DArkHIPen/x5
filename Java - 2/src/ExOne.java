@@ -10,7 +10,6 @@ public class ExOne {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter an integer, please: ");
-
         String num = scanner.nextLine();
 
         System.out.println("Your last number is: " + num.substring(num.length() - 1));

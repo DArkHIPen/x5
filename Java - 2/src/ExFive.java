@@ -5,28 +5,30 @@ public class ExFive {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter three integers using Enter, please: ");
+        int min = scanner.nextInt();
+        for (int i = 0; i < 2; i++) {
+            int in = scanner.nextInt();
+            if (in < min) {
+                min = in;
+            }
+        }
+        System.out.println("Your minimum number is: " + min);
 
+        /*
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter three integers using Enter, please: ");
         String oneS = scanner.nextLine();
-
-        String twoS = scanner.nextLine();
-
-        String threeS = scanner.nextLine();
-
-
         int one = Integer.parseInt(oneS);
-
+        String twoS = scanner.nextLine();
         int two = Integer.parseInt(twoS);
-
+        String threeS = scanner.nextLine();
         int three = Integer.parseInt(threeS);
 
-        System.out.println("Number's is " + one + ", " + two + ", " + three + ".");
-
         int min = one;
-
-        if(min > two){
+        if (min > two) {
             min = two;
         }
-        if (min > three){
+        if (min > three) {
             min = three;
         }
 
@@ -34,8 +36,9 @@ public class ExFive {
 
     }
 
-    public static void numOut(int n){
+    public static void numOut(int n) {
         System.out.println("Your minimum number is: " + n);
     }
-
+    */
+    }
 }
