@@ -9,7 +9,7 @@ public class ExEight {
         int sumEvenNeg = 0;
         int possitiveNumbers = 0;
         int average = 0;
-        ArrayList<Integer> averageA = new ArrayList<>();
+        int numberAverage = 0;
 
         for (int number : numbers) {
             if (number > max) {
@@ -25,7 +25,7 @@ public class ExEight {
                 possitiveNumbers++;
             }
             if (number < 0) {
-                averageA.add(number);
+                numberAverage ++;
                 average += number;
             }
 
@@ -35,7 +35,7 @@ public class ExEight {
                 "\nСумма положительных элементов: " + sumPossitive +
                 "\nСумма четных отрицательных элементов: " + sumEvenNeg +
                 "\nКоличество  положительных элементов: " + possitiveNumbers +
-                "\nCреднее арифметическое отрицательных элементов: " + (average / averageA.size()));
+                "\nCреднее арифметическое отрицательных элементов: " + (average / numberAverage));
 
     }
 }
