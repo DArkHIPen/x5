@@ -1,10 +1,12 @@
+package Phone;
+
 import java.util.Arrays;
 
 public class Phone {
 
-    String number;
-    String model;
-    int weight;
+    public String number;
+    public String model;
+    public int weight;
 
     public void getNumber(){
         System.out.println("\nНомер телефона: " + number);
@@ -19,11 +21,11 @@ public class Phone {
         System.out.println(Arrays.toString(number));
     }
 
-    Phone(String number, String model, int weight){
+    public Phone(String number, String model, int weight){
         this(number, model);
         this.weight = weight;
     }
-    Phone(String number, String model){
+    public Phone(String number, String model){
         this.number = number;
         this.model = model;
     }

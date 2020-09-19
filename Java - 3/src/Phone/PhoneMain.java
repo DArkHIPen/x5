@@ -1,3 +1,5 @@
+package Phone;
+
 import java.util.Scanner;
 
 public class PhoneMain {
