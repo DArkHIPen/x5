@@ -7,9 +7,9 @@ public class Engine {
         this.power = power;
     }
 
-    public String EngineOut (){
+    public String EngineOut() {
         return "\n\t Производитель :" + manufacturer +
-        "\n\t Мощность: " + power;
+                "\n\t Мощность: " + power;
     }
 
 }

@@ -22,9 +22,9 @@ public class Lorry extends Car {
 
     @Override
     public String printInfo() {
-        return "Модель: " + modelName +
-                "\n Класс: " + modelClass +
-                "\n Вес: " + weight +
+        return "Модель: " + getModelName() +
+                "\n Класс: " + getModelClass() +
+                "\n Вес: " + getWeight() +
                 "\n Двигатель: " + engine.EngineOut() +
                 "\n Грузоподьемность: " + carryWeight;
     }

@@ -1,7 +1,12 @@
 public class Circle implements Shape {
-    private double p = 3.14;
+    final private double P = 3.14;
     private double r;
+
+    public Circle(double r){
+        this.r = r;
+    }
+
     public double square() {
-        return p * (r*r);
+        return P * (r*r);
     }
 }
