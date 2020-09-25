@@ -2,27 +2,27 @@ package University;
 
 public class Student {
     private String firstName, lastName, group;
-    private double averageMark;
+    public double averageMark;
 
-    public Student(String firstName, String lastName, String group, double averageMark){
+    public Student(String firstName, String lastName, String group, double averageMark) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.group = group;
         this.averageMark = averageMark;
     }
 
-    public String getFirstName(){
+    public String getFirstName() {
         return firstName;
     }
-    public double getAverageMark(){
+
+    public double getAverageMark() {
         return averageMark;
     }
 
-    public int getScholarship(){
-        if (getAverageMark() == 5){
+    public int getScholarship() {
+        if (getAverageMark() == 5) {
             return 100;
-        }
-        else{
+        } else {
             return 80;
         }
     }
