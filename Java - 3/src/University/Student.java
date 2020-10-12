@@ -2,7 +2,7 @@ package University;
 
 public class Student {
     private String firstName, lastName, group;
-    public double averageMark;
+    protected double averageMark;
 
     public Student(String firstName, String lastName, String group, double averageMark) {
         this.firstName = firstName;
@@ -15,12 +15,8 @@ public class Student {
         return firstName;
     }
 
-    public double getAverageMark() {
-        return averageMark;
-    }
-
     public int getScholarship() {
-        if (getAverageMark() == 5) {
+        if (averageMark == 5) {
             return 100;
         } else {
             return 80;
