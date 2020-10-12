@@ -25,7 +25,7 @@ public class Lorry extends Car {
         return "Модель: " + getModelName() +
                 "\n Класс: " + getModelClass() +
                 "\n Вес: " + getWeight() +
-                "\n Двигатель: " + engine.EngineOut() +
+                "\n Двигатель: " + getEngine().EngineOut() +
                 "\n Грузоподьемность: " + carryWeight;
     }
 

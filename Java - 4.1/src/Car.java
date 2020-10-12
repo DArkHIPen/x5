@@ -3,7 +3,7 @@ public abstract class Car {
     private String modelName;
     private String modelClass;
     private double weight;
-    public Engine engine;
+    private Engine engine;
 
     public Car(String modelName, String modelClass, double weight, Engine engine) {
         this.modelName = modelName;
@@ -26,6 +26,9 @@ public abstract class Car {
         return weight;
     }
 
+    public Engine getEngine() {
+        return engine;
+    }
 
     public abstract String stop();
 
