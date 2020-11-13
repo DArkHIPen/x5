@@ -1,0 +1,27 @@
+### Задача 1. Исследование проекта
+
+0. Вытянуть проект
+
+git clone https://github.com/dry-python/returns.git
+
+1. Создать новый пуcтой файл '.gitignore'
+
+touch .gitignore
+
+2. Найдите 5 самых больших (по количеству строк) файлов в https://github.com/dry-python/returns/tree/master/returns 
+
+
+find ./returns/returns/ -type f |xargs wc -l | sort -n | tail -n 6 | head -n 5
+
+2. Найдите 5 самых маленьких (по количеству строк) файлов во всем проекте https://github.com/dry-python/returns
+
+find ./returns/ -type f |xargs wc -l | sort -n -r | tail -n 5
+
+
+
+
+
+
+
+
+ 
